@@ -1,0 +1,48 @@
+.guarantee-banner {
+  background: linear-gradient(90deg, var(--color-black) 0%, #1a1505 50%, var(--color-black) 100%);
+  padding: 5rem 0;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.guarantee-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.05), transparent);
+  animation: shine 8s infinite linear;
+}
+
+@keyframes shine {
+  100% {
+    left: 200%;
+  }
+}
+
+.guarantee-text {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .guarantee-text {
+    font-size: 2.5rem;
+  }
+}
+
+.guarantee-highlight {
+  color: var(--color-gold);
+  font-weight: 600;
+  font-style: italic;
+}

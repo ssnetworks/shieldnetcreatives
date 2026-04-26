@@ -1,0 +1,131 @@
+.why-choose-us {
+  background-color: var(--color-black);
+}
+
+.wcu-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .wcu-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.wcu-subtitle {
+  color: var(--color-text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+.wcu-list {
+  list-style: none;
+  margin-bottom: 2.5rem;
+}
+
+.wcu-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  font-size: 1.1rem;
+  color: var(--color-text-primary);
+}
+
+.wcu-icon {
+  color: var(--color-gold);
+  flex-shrink: 0;
+}
+
+.wcu-visual {
+  position: relative;
+}
+
+.wcu-video-wrapper {
+  width: 100%;
+  aspect-ratio: 4/5;
+  background: linear-gradient(135deg, var(--color-charcoal-deep), var(--color-charcoal));
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.wcu-video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.wcu-stat-card {
+  position: absolute;
+  bottom: -2rem;
+  left: -2rem;
+  background: var(--color-surface);
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+@media (max-width: 768px) {
+  .wcu-stat-card {
+    left: 1rem;
+    bottom: -1rem;
+  }
+}
+
+.stat-number {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-gold);
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-text-secondary);
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.floating-element {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  z-index: 1;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.element-1 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.4) 0%, transparent 70%);
+  top: -50px;
+  right: -50px;
+}
+
+.element-2 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255, 140, 0, 0.2) 0%, transparent 70%);
+  bottom: -100px;
+  left: -100px;
+}
